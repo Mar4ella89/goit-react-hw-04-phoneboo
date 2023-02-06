@@ -1,4 +1,5 @@
 import { Component } from 'react';
+// import { useState } from 'react';
 import PropTypes from 'prop-types';
 import css from './ContactForm.module.css';
 
@@ -7,6 +8,12 @@ class ContactForm extends Component {
     name: '',
     number: '',
   };
+
+  // const [votes, setVotes] = useState({
+  //   good: 0,
+  //   neutral: 0,
+  //   bad: 0,
+  // });
 
   handleChange = event => {
     const { name, value } = event.currentTarget;
